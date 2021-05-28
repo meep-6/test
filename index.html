@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="lmao.css">
+  </head>
+<body>
+    <div id='mysidenav' class='sidenav'>
+        <a href='javascript:void(0)' class='closebtn' onclick="closeNav()">&times;</a>
+        <a href='#'>About</a>
+        <a href='#'>Login</a>
+        <a href='#'>Projects</a>
+        <a href='#'>Contacts</a>
+    </div>
+    <div id='homepage'>
+        <span id='bitch' style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("mysidenav").style.width = "250px";
+          document.getElementById("homepage").style.marginLeft = "250px";
+          document.getElementById("bitch").style.color = "rgba(1,1,1,0)";
+  }
+  
+  function closeNav() {
+            document.getElementById("mysidenav").style.width = "0";
+            document.getElementById("homepage").style.marginLeft = "0";
+            document.getElementById("bitch").style.color = "rgba(0,0,0,1)";
+  }
+    </script>
+    
+</body>
+</html> 
